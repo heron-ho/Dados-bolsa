@@ -40,9 +40,12 @@ for ticker in tickers:
     respostas_CAGR_RECEITA.append(Strong_da_div1)
     respostas_CAGR_LUCRO.append(Strong_da_div2)
     
+# 3 - Realizando prints dos idens obtidos   
 print("lista de indicadores para adicionar à planilha:")
 print(respostas_CAGR_RECEITA)
 print(respostas_CAGR_LUCRO)
+
+# - Salvando em arquivos excel os dados
 empresas['CAGR RECEITAS 5 ANOS'] = respostas_CAGR_RECEITA
 empresas['CAGR LUCROS 5 ANOS'] = respostas_CAGR_LUCRO
 print(empresas)
